@@ -1,4 +1,9 @@
-### Hi there 👋
+# Mr. Kerberus 👋
+
+```bash
+$ sudo apt install linux-lover javascript-developer php-developer python-developer
+```
+Soy un desarrollador de software pasionado por los proyectos ```open source```, busco aportar mis conocimientos para fortalecer el conocimiento de la comunidad de desarrolladores de habla hispana.
 
 <!--
 **DamianGonzalez27/DamianGonzalez27** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
