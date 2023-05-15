@@ -1,4 +1,4 @@
-# Mr. Kerberus 👋
+# Damian Gonzalez 👋
 
 ```bash
 $ sudo apt install linux-lover javascript-developer php-developer python-developer
