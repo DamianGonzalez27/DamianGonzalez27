@@ -8,6 +8,6 @@ Construyo productos y soluciones que operan como microversos bien orquestados: t
 Trabajo con PyMEs, equipos DevOps, arquitecturas en la nube, microservicios, control de calidad, facturación electrónica, seguridad, infraestructura como código y más.
 No sólo entrego software. Entrego visión.
 
-⚙️ Si el sistema no existe, lo diseño.
-🧩 Si la herramienta no encaja, la reconstruyo.
-🚀 Y si el camino no está trazado, lo diseño desde la raíz… pero versionado y con rollback, por si acaso.
+- ⚙️ Si el sistema no existe, lo diseño.
+- 🧩 Si la herramienta no encaja, la reconstruyo.
+- 🚀 Y si el camino no está trazado, lo diseño desde la raíz… pero versionado y con rollback, por si acaso.
