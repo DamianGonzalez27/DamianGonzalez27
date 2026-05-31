@@ -1,5 +1,7 @@
 # Erick Damian Gonzalez Aranda 👋
 ---
+## Tech Lead | Cloud & Distributed Systems | AWS Architect | Ingeniero en Sistemas computacionales | Especialista desarrollo de software
+---
 
 
 Ingeniero en sistemas con más de 8 años de experiencia diseñando y liderando soluciones
