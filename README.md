@@ -13,6 +13,7 @@ Inspirado por la disciplina y el pragmatismo de los marcos de pensamiento sisté
 
 Los repositorios fijados en mi perfil no son utilerías aisladas; conforman el núcleo de una plataforma de desarrollo interna interconectada que resuelve problemas reales de producción, desde la frontera del tráfico hasta el almacenamiento de eventos:
 
+~~~
 [ Cliente HTTP ]
        │
        ▼
@@ -20,7 +21,7 @@ Los repositorios fijados en mi perfil no son utilerías aisladas; conforman el n
 │ 1. API-REST-Boilerplate              │ ◄── [ Arquitectura Hexagonal / DDD ]
 │  El estándar de diseño transaccional │
 └──────────┬───────────────────────────┘
-│
+           │
 ├───────────────────────────┐
 ▼ (Intercepción)            ▼ (Contexto Asíncrono)
 ┌──────────────────────────────────────┐ ┌──────────────────────────────────────┐
@@ -35,6 +36,7 @@ Los repositorios fijados en mi perfil no son utilerías aisladas; conforman el n
 │    Topología Híbrida Kafka (KRaft)   │      (Aislamiento de Blast Radius)
 │    + RabbitMQ con persistencia real. │
 └──────────────────────────────────────┘
+~~~
 
 ### 📦 Componentes Core del Ecosistema:
 
