@@ -14,28 +14,29 @@ Inspirado por la disciplina y el pragmatismo de los marcos de pensamiento sisté
 Los repositorios fijados en mi perfil no son utilerías aisladas; conforman el núcleo de una plataforma de desarrollo interna interconectada que resuelve problemas reales de producción, desde la frontera del tráfico hasta el almacenamiento de eventos:
 
 ~~~
-[ Cliente HTTP ]
-       │
-       ▼
-┌──────────────────────────────────────┐
-│ 1. API-REST-Boilerplate              │ ◄── [ Arquitectura Hexagonal / DDD ]
-│  El estándar de diseño transaccional │
-└──────────┬───────────────────────────┘
-           │
-├───────────────────────────┐
-▼ (Intercepción)            ▼ (Contexto Asíncrono)
+                            [ Cliente HTTP ]
+                                   │
+                                   ▼
+                            ┌──────────────────────────────────────┐
+                            │ 1. API-REST-Boilerplate              │ ◄── [ Arquitectura Hexagonal / DDD ]
+                            │  El estándar de diseño transaccional │
+                            └──────────┬───────────────────────────┘
+                                       │
+                     ├───────────────────────────┐
+                     |                           |
+                     ▼ (Intercepción)            ▼ (Contexto Asíncrono)
 ┌──────────────────────────────────────┐ ┌──────────────────────────────────────┐
 │ 2. GlobalHandler                     │ │ 3. Framework-Observabilidad          │
 │    Escudo perimetral, sanitización   │ │    (logger-tracker)                  │
 │    de errores y mitigación OWASP.    │ │    Inyección de Correlation IDs.     │
 └──────────────────────────────────────┘ └──────────────────────────────────────┘
-│
-▼ (Mensajería Asíncrona)
-┌──────────────────────────────────────┐
-│ 4. MessagingCluster                  │ ◄── [ Cuenta Spoke Dedicada ]
-│    Topología Híbrida Kafka (KRaft)   │      (Aislamiento de Blast Radius)
-│    + RabbitMQ con persistencia real. │
-└──────────────────────────────────────┘
+                                                        │
+                                                        ▼ (Mensajería Asíncrona)
+                                          ┌──────────────────────────────────────┐
+                                          │ 4. MessagingCluster                  │ ◄── [ Cuenta Spoke Dedicada ]
+                                          │    Topología Híbrida Kafka (KRaft)   │      (Aislamiento de Blast Radius)
+                                          │    + RabbitMQ con persistencia real. │
+                                          └──────────────────────────────────────┘
 ~~~
 
 ### 📦 Componentes Core del Ecosistema:
